@@ -28,7 +28,7 @@ for font_file in sys.argv[2:]:
 
         font.familyname += suffix
 
-        new_font_path = font.fontname + suffix + ".ttf"
+        new_font_path = "output/" + font.fontname + suffix + ".ttf"
         font.generate(new_font_path)
 
         font.close()
